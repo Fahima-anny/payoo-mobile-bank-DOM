@@ -8,6 +8,81 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>PAYoo bank</h1>
+    <main class="flex justify-center items-center h-[100vh]">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-3">
+                <!-- login section  -->
+                <div class="stats shadow">
+                    <div class="stat">
+                      <div class="stat-value" id="accountBalance">3200</div>
+                      <div class="stat-desc">Total Cash</div>
+                    </div>
+                  </div>
+                <div class="divider"></div>
+               <div class="flex gap-5"> 
+                <button class="btn btn-lg" id="displayAddMoney">Add money</button>
+                <button class="btn btn-lg" id="displayCashOut">Cash Out</button></div>
+   
+                <!-- add money start  -->
+<div id="addMoneyDiv">
+    <div class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-5">
+        <form class="card-body">
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Add Money</span>
+            </label>
+            <input type="text" placeholder="Amount" id="addMoneyInp" class="input input-bordered" required />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Pin</span>
+            </label>
+            <input type="password" placeholder="Enter Pin" id="addMoneyPinInp" class="input input-bordered" required />
+          </div>
+          <div class="form-control mt-6">
+            <button class="btn btn-primary" id="addMoneyBtn">Add Money</button>
+          </div>
+        </form>
+      </div>
+</div>
+                <!-- add money end  -->
+   
+                <!-- cash out start  -->
+<div class="hidden" id="cashOutDiv">
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-5">
+        <form class="card-body">
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Cash out</span>
+            </label>
+            <input type="text" placeholder="Amount" id="cashOutInp" class="input input-bordered" required />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text">Pin</span>
+            </label>
+            <input type="password" placeholder="Enter Pin" id="cashOutPinInp" class="input input-bordered" required />
+          </div>
+          <div class="form-control mt-6">
+            <button class="btn btn-primary" id="cashOutBtn">Cash Out</button>
+          </div>
+        </form>
+      </div>
+</div>
+                <!-- cash out end  -->
+
+
+
+
+              </div>
+            </div>
+          </div>
+    </main>
+
+
+
+    <script src="./home.js"></script>
 </body>
 </html>
