@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <main class="flex justify-center items-center h-[100vh]">
+    <main class="flex justify-center items-center h-[100vh] ">
         <div class="mockup-phone">
             <div class="camera"></div>
             <div class="display">
@@ -21,13 +21,14 @@
                     </div>
                   </div>
                 <div class="divider"></div>
-               <div class="flex gap-5"> 
+               <div class="flex gap-3 flex-wrap justify-center items-center"> 
                 <button class="btn btn-lg" id="displayAddMoney">Add money</button>
-                <button class="btn btn-lg" id="displayCashOut">Cash Out</button></div>
+                <button class="btn btn-lg" id="displayCashOut">Cash Out</button>
+                <button class="btn btn-lg" id="transactionBtn">Transactions</button></div>
    
                 <!-- add money start  -->
 <div id="addMoneyDiv">
-    <div class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-5">
+    <div class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-3">
         <form class="card-body">
           <div class="form-control">
             <label class="label">
@@ -51,7 +52,7 @@
    
                 <!-- cash out start  -->
 <div class="hidden" id="cashOutDiv">
-    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-5">
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-3">
         <form class="card-body">
           <div class="form-control">
             <label class="label">
@@ -74,6 +75,11 @@
                 <!-- cash out end  -->
 
 
+                <!-- transaction start  -->
+                 <div id="transactionDiv" class="hidden mt-3">
+<h1 class="text-2xl font-bold text-center">Transaction History</h1> 
+                 </div>
+                <!-- transaction ens -->
 
 
               </div>
@@ -82,7 +88,7 @@
     </main>
 
 
-
+<script src="./utilities.js"></script>
     <script src="./home.js"></script>
 </body>
 </html>
